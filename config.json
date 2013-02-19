@@ -1,0 +1,6 @@
+{
+	"host_map": [
+		"$.fitabase.com => www.fitabase.com",
+		"$.fitabase.com => fitabase.com"
+	]
+}
