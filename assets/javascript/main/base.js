@@ -20,7 +20,7 @@ SortTable = function() {
     rowArray[i] = new Object;
     rowArray[i].oldIndex = i;
     var steps = rows[i].getElementsByTagName('td')[1].innerHTML;
-    steps = steps.replace(/^\s*([0-9]+).*?$/, "$1");
+    steps = steps.replace(/^\s*([0-9.]+).*?$/, "$1");
     
     // delete avg steps per day from original table
     rows[i].getElementsByTagName('td')[1].innerHTML = steps;
@@ -39,8 +39,8 @@ SortTable = function() {
 }
 
 function RowCompare(a, b) { 
-  var aVal = a.value.match(/^\s*([0-9]+)\s*/);
-  var bVal = b.value.match(/^\s*([0-9]+)\s*/);
+  var aVal = a.value.match(/^\s*([0-9.]+)\s*/);
+  var bVal = b.value.match(/^\s*([0-9.]+)\s*/);
   aVal = parseFloat(aVal[1]);
   bVal = parseFloat(bVal[1]);
 
