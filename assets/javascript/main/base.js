@@ -4,8 +4,8 @@ x$(document).on("DOMContentLoaded", function() {
   PopulateChallengeTable = function() {
     mw_popularChallengeTable();
 
-    console.log('hi');
-    SortTable()
+    SortTable();
+    x$(".mw_loading").removeClass("mw_active");
   }
 });
 

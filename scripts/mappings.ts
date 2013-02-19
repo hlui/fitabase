@@ -19,6 +19,9 @@ match($status) {
 
     match($path) {
       with(/^\/$|^\/\?/) {
+        export("Location", "/c/2218680c-db37-4226-8670-0b3370bdfea9/challenge")
+      }
+      with(/2218680c/) {
         log("--> Importing pages/home.ts in mappings.ts")
         @import pages/home.ts
       }

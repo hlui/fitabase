@@ -36,4 +36,22 @@ input[type="number"]::-webkit-outer-spin-button {
   display: none;
 }
 
+#winning_team {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
+.mw_loading {
+  display: none;
+}
+.mw_loading.mw_active {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -12px;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
